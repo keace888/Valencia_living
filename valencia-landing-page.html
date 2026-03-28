@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best 55+ Lifestyle in Florida | Valencia Communities by GL Homes</title>
+    <meta name="description" content="Discover Florida's premier 55+ communities. Valencia by GL Homes offers new construction homes from the mid $300s to $2M on Florida's east and west coasts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* =====================================================
+           BRAND TOKENS — Cambia colores aquí
+           --navy : navbar, botones, fondos oscuros → #003262
+           --blue : acentos, iconos, hover          → #0097CC
+           ===================================================== */
+        :root {
+            --navy:      #003262;
+            --blue:      #0097CC;
+            --white:     #ffffff;
+            --off-white: #f4f6f9;
+            --text:      #222b3a;
+            --muted:     #5a6474;
+            --fh: 'Josefin Sans', sans-serif;
+            --fb: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html  { scroll-behavior: smooth; }
+        body  { font-family: var(--fb); color: var(--text); overflow-x: hidden; line-height: 1.6; }
+        img   { display: block; max-width: 100%; }
+        a     { text-decoration: none; }
+        .eyebrow {
+            display: block; font-family: var(--fh); font-size: 11px; font-weight: 400;
+            letter-spacing: .35em; text-transform: uppercase;
+            color: var(--blue); margin-bottom: 14px;
+        }
+        .section-title {
+            font-family: var(--fh); font-weight: 300;
+            font-size: clamp(26px, 3.2vw, 44px);
+            letter-spacing: .06em; text-transform: uppercase;
+            line-height: 1.18; color: var(--navy); margin-bottom: 20px;
+        }
+        .section-title.light { color: var(--white); }
+        .rule  { width: 48px; height: 2px; background: var(--blue); margin-bottom: 26px; }
+        .section-body { font-size: 15.5px; font-weight: 300; color: var(--muted); line-height: 1.82; }
+        .section-body.light { color: rgba(255,255,255,.72); }
+        .btn {
+            display: inline-flex; align-items: center; gap: 14px;
+            font-family: var(--fh); font-size: 12px; font-weight: 600;
+            letter-spacing: .18em; text-transform: uppercase;
+            padding: 14px 18px 14px 30px; border-radius: 50px;
+            border: 2px solid transparent;
+            cursor: pointer; transition: all .28s ease; white-space: nowrap;
+        }
+        .btn-icon {
+            width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            transition: transform .28s, background .28s;
+        }
+        .btn-icon svg { width: 13px; height: 13px; fill: white; }
+        .btn-primary { background: var(--navy); color: var(--white); border-color: var(--navy); }
+        .btn-primary .btn-icon { background: var(--blue); }
+        .btn-primary:hover { background: var(--blue); border-color: var(--blue); }
+        .btn-primary:hover .btn-icon { transform: translateX(4px); background: rgba(255,255,255,.22); }
+        .btn-ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,.65); padding: 14px 32px; }
+        .btn-ghost:hover { background: rgba(255,255,255,.12); border-color: white; }
+        .btn-sm { padding: 11px 14px 11px 22px; font-size: 11px; }
+        .btn-sm .btn-icon { width: 30px; height: 30px; }
+        .btn-sm .btn-icon svg { width: 11px; height: 11px; }
+        .fade-up { opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .7s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+        .fade-up.d1 { transition-delay: .12s; }
+        .fade-up.d2 { transition-delay: .24s; }
+    </style>
+</head>
+<body>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 1 — NAVBAR
+     ★ LOGO:           class="nav-logo"  → cambia texto "Valencia"
+     ★ LINKS NAV:      class="nav-menu"  → edita los <a>
+     ★ BOTÓN "Request Info": class="nav-btn" → cambia texto/href
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    .nav {
+        position: fixed; top: 0; width: 100%; z-index: 900;
+        background: rgba(0,50,98,.96); backdrop-filter: blur(12px);
+        height: 72px; display: flex; align-items: center; justify-content: space-between;
+        padding: 0 52px; transition: height .3s, box-shadow .3s;
+    }
+    .nav.scrolled { height: 58px; box-shadow: 0 4px 24px rgba(0,0,0,.22); }
+    .nav-logo { font-family: var(--fh); font-weight: 100; font-size: 26px; letter-spacing: .35em; text-transform: uppercase; color: var(--white); }
+    .nav-menu { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-menu a { font-family: var(--fh); font-size: 12px; font-weight: 400; letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.8); transition: color .2s; }
+    .nav-menu a:hover { color: var(--blue); }
+    .nav-menu .nav-btn { background: var(--blue); color: var(--white) !important; padding: 9px 22px; border-radius: 30px; }
+    .nav-menu .nav-btn:hover { background: #007aaa; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: white; border-radius: 2px; }
+    @media (max-width:768px) {
+        .nav { padding: 0 24px; }
+        .nav-menu { display: none; flex-direction: column; gap: 0; position: fixed; top: 72px; left: 0; right: 0; background: rgba(0,50,98,.98); padding: 20px 0; border-top: 1px solid rgba(255,255,255,.1); }
+        .nav-menu.open { display: flex; }
+        .nav-menu li a { display: block; padding: 14px 28px; font-size: 14px; }
+        .hamburger { display: flex; }
+    }
+</style>
+
+<nav class="nav" id="nav">
+    <a href="#top" class="nav-logo">Valencia</a> <!-- ★ LOGO -->
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="#homes">Homes</a></li>
+        <li><a href="#lifestyle">Lifestyle</a></li>
+        <li><a href="#location">Locations</a></li>
+        <li><a href="#contact" class="nav-btn">Request Info</a></li> <!-- ★ BOTÓN NAV -->
+    </ul>
+    <button class="hamburger" aria-label="Open menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 2 — HERO
+     ★ FOTO FONDO: dentro del CSS de abajo, busca .hero-bg
+       Cambia la URL dentro de background: url('...')
+     ★ HEADLINE:    edita el <h1>
+     ★ SUBHEADLINE: edita el <p class="hero-sub">
+     ★ BOTÓN 1 (azul):  primer <a class="btn btn-primary">
+     ★ BOTÓN 2 (ghost): segundo <a class="btn btn-ghost">
+     ★ OSCURIDAD OVERLAY: cambia los valores .58 / .46 / .72
+       en .hero-overlay (más alto = más oscuro)
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    .hero { position: relative; height: 100vh; min-height: 640px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+
+    /* ★★★ FOTO DEL HERO — CAMBIA LA URL AQUÍ ★★★
+       Reemplaza la URL dentro de url('...')
+       Tamaño ideal: 1920px ancho
+       Fuentes: unsplash.com · pexels.com · glhomes.com */
+    .hero-bg {
+        position: absolute; inset: 0;
+        background: url('https://i.postimg.cc/13hSc0MR/Home-Picture-Valencia.jpg') center 40% / cover no-repeat;
+        transform: scale(1.06); will-change: transform;
+    }
+
+    /* ★ OVERLAY del hero: ajusta opacidades para más/menos oscuridad */
+    .hero-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(170deg,
+            rgba(0,50,98,.62) 0%,   /* ★ esquina superior izquierda */
+            rgba(0,50,98,.50) 45%,  /* ★ centro */
+            rgba(0,20,50,.80) 100%  /* ★ esquina inferior derecha */
+        );
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 880px; padding: 0 32px; }
+    .hero h1 { font-family: var(--fh); font-weight: 200; font-size: clamp(38px, 6vw, 80px); letter-spacing: .07em; text-transform: uppercase; color: var(--white); line-height: 1.08; margin-bottom: 22px; }
+    .hero-divider { width: 56px; height: 2px; background: var(--blue); margin: 0 auto 38px; }
+    .hero-sub { font-family: var(--fh); font-weight: 300; font-size: clamp(15px, 2vw, 21px); letter-spacing: .1em; color: rgba(255,255,255,.88); margin-bottom: 46px; }
+    .hero-ctas { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .scroll-cue { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 8px; font-family: var(--fh); font-size: 10px; letter-spacing: .25em; text-transform: uppercase; color: rgba(255,255,255,.55); animation: cue 2.2s ease-in-out infinite; }
+    .scroll-cue-line { width: 1px; height: 38px; background: linear-gradient(to bottom, rgba(255,255,255,.55), transparent); }
+    @keyframes cue { 0%,100%{ transform: translateX(-50%) translateY(0); } 55%{ transform: translateX(-50%) translateY(9px); } }
+    @media (max-width:768px) { .hero-ctas { flex-direction: column; align-items: center; } }
+</style>
+
+<section class="hero" id="top">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <span class="eyebrow" style="color:var(--blue); margin-bottom:18px; display:block;">GL Homes · Valencia Communities · Florida</span>
+        <h1>Best 55+<br>Lifestyle in Florida</h1> <!-- ★ HEADLINE -->
+        <div class="hero-divider"></div>
+        <p class="hero-sub">Valencia Homes from the mid $300s to $2M</p> <!-- ★ SUBHEADLINE -->
+        <div class="hero-ctas">
+            <a href="#homes" class="btn btn-primary"> <!-- ★ BOTÓN 1 HERO -->
+                Explore Communities
+                <span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Request a Brochure</a> <!-- ★ BOTÓN 2 HERO -->
+        </div>
+    </div>
+    <div class="scroll-cue"><span>Scroll</span><div class="scroll-cue-line"></div></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 3 — STAT BAR
+     ★ NÚMEROS: edita cada <span class="stat-num">
+     ★ TEXTOS:  edita cada <span class="stat-lbl">
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    .stat-bar { background: var(--navy); display: flex; justify-content: center; flex-wrap: wrap; }
+    .stat-item { flex: 1; min-width: 180px; max-width: 260px; padding: 32px 24px; text-align: center; border-right: 1px solid rgba(255,255,255,.1); }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { display: block; font-family: var(--fh); font-weight: 200; font-size: 30px; letter-spacing: .05em; color: var(--blue); }
+    .stat-lbl { display: block; font-family: var(--fh); font-size: 10.5px; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-top: 5px; }
+    @media (max-width:480px) { .stat-item { width: 100%; border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); } .stat-item:last-child { border-bottom: none; } }
+</style>
+
+<div class="stat-bar">
+    <div class="stat-item"><span class="stat-num">40+</span><span class="stat-lbl">Years of Excellence</span></div>       <!-- ★ -->
+    <div class="stat-item"><span class="stat-num">50,000+</span><span class="stat-lbl">Happy Homeowners</span></div>        <!-- ★ -->
+    <div class="stat-item"><span class="stat-num">Mid $300s</span><span class="stat-lbl">Starting Price</span></div>        <!-- ★ -->
+    <div class="stat-item"><span class="stat-num">2</span><span class="stat-lbl">Florida Coasts</span></div>                <!-- ★ -->
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 4 — HOMES
+     ★★★ FOTO DE HOMES: busca el <img> con id="homes-photo"
+         Cambia el src="" con tu URL de casa.
+         Ideal: exterior de casa, luz de día, 900px ancho.
+     ★ CAPTION sobre la foto:   class="img-caption"
+     ★ TÍTULO:                  class="section-title"
+     ★ TEXTO/COPY:              class="section-body"
+     ★ BOTÓN VALENCIA PARC:     primer  <a> en homes-btns
+     ★ BOTÓN VALENCIA SKY:      segundo <a> en homes-btns
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    .split { display: grid; grid-template-columns: 1fr 1fr; max-width: 1440px; margin: 0 auto; }
+    .split-img { position: relative; overflow: hidden; min-height: 560px; }
+    .split-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s ease; }
+    .split-img:hover img { transform: scale(1.05); }
+    .img-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 28px; background: linear-gradient(to top, rgba(0,50,98,.78), transparent); font-family: var(--fh); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.85); }
+    .split-body { padding: 80px 70px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
+    .homes-btns { display: flex; flex-direction: column; gap: 14px; margin-top: 36px; align-items: flex-start; }
+    @media (max-width:1080px) { .split { grid-template-columns: 1fr; } .split-img { min-height: 380px; } .split-body { padding: 60px 44px; } }
+    @media (max-width:768px) { .split-body { padding: 48px 28px; } .homes-btns { width: 100%; } .homes-btns .btn { width: 100%; justify-content: space-between; } }
+</style>
+
+<section id="homes" style="background: var(--white);">
+    <div class="split">
+        <div class="split-img">
+
+            <!-- ★★★ FOTO SECCIÓN HOMES ★★★
+                 Cambia el src="" con tu URL.
+                 Usa fotos de glhomes.com o unsplash.com
+                 Ideal: exterior de casa blanca/mediterranea, luz de día, palmeras. -->
+            <img
+                id="homes-photo"
+                src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=85"
+                alt="New luxury home exterior at Valencia community"
+                loading="lazy"
+            />
+
+            <div class="img-caption">Valencia · New Construction Homes</div> <!-- ★ CAPTION -->
+        </div>
+
+        <div class="split-body fade-up">
+            <span class="eyebrow">Exceptional Living</span>
+            <h2 class="section-title">New Homes<br>Designed for 55+</h2> <!-- ★ TÍTULO -->
+            <div class="rule"></div>
+            <p class="section-body"> <!-- ★ TEXTO/COPY -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <br><br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+            <div class="homes-btns">
+                <!-- ★ BOTÓN VALENCIA PARC — URL del brief, no cambiar -->
+                <a href="https://www.glhomes.com/valencia-parc-at-riverland/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    Explore Valencia Parc
+                    <span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></span>
+                </a>
+                <!-- ★ BOTÓN VALENCIA SKY — URL del brief, no cambiar -->
+                <a href="https://www.glhomes.com/valencia-sky/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    Explore Valencia Sky
+                    <span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 5 — LIFESTYLE
+     ★★★ FOTO GRANDE (izquierda, toda la altura):
+         id="lifestyle-main" → cambia src=""
+         Ideal: seniors 55+ cenando, riendo, piscina resort
+
+     ★★★ FOTO PEQUEÑA ARRIBA DERECHA:
+         id="lifestyle-top" → cambia src=""
+         Ideal: piscina con gente, spa, wellness
+
+     ★★★ FOTO PEQUEÑA ABAJO DERECHA:
+         id="lifestyle-bottom" → cambia src=""
+         Ideal: tenis o pickleball con personas visibles
+
+     ★ TÍTULO DEL PANEL:  class="section-title light"
+     ★ TEXTO DEL PANEL:   class="section-body light"
+     ★ ETIQUETAS AMENIDADES: cada <span class="amenity-label">
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    .lifestyle { display: flex; min-height: 680px; }
+    .lifestyle-gallery { flex: 1.15; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 5px; }
+    .lifestyle-gallery .g-main { grid-row: span 2; }
+    .lifestyle-gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .lifestyle-panel { flex: 0.85; background: var(--navy); padding: 80px 64px; display: flex; flex-direction: column; justify-content: center; }
+    .amenity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 34px; }
+    .amenity { display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,.82); }
+    .amenity-icon { width: 34px; height: 34px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .amenity-icon svg { width: 16px; height: 16px; fill: white; }
+    .amenity-label { font-family: var(--fh); font-size: 12px; font-weight: 400; letter-spacing: .1em; text-transform: uppercase; }
+    @media (max-width:1080px) { .lifestyle { flex-direction: column; } .lifestyle-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 260px; } .lifestyle-gallery .g-main { grid-row: span 1; grid-column: span 2; } .lifestyle-panel { padding: 60px 44px; } }
+    @media (max-width:768px) { .lifestyle-gallery { grid-template-rows: 220px 180px; } .lifestyle-panel { padding: 48px 28px; } .amenity-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section id="lifestyle">
+    <div class="lifestyle">
+        <div class="lifestyle-gallery">
+
+            <!-- ★★★ FOTO LIFESTYLE GRANDE (columna izquierda, toda la altura) ★★★
+                 Cambia el src="" con tu foto.
+                 Ideal: seniors 55+ cenando con string lights, o piscina resort social. -->
+            <div class="g-main">
+                <img
+                    id="lifestyle-main"
+                    src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=800&q=85"
+                    alt="Active seniors enjoying social dining at Valencia community"
+                    loading="lazy"
+                />
+            </div>
+
+            <!-- ★★★ FOTO LIFESTYLE PEQUEÑA ARRIBA DERECHA ★★★
+                 Cambia el src="" con tu foto.
+                 Ideal: piscina resort con palmeras y gente disfrutando. -->
+            <div>
+                <img
+                    id="lifestyle-top"
+                    src="https://i.postimg.cc/GmcFzxGx/rl-resistamce-pool-ladies-(1).webp"
+                    loading="lazy"
+                    style="height:100%; object-fit:cover;"
+                />
+            </div>
+
+            <!-- ★★★ FOTO LIFESTYLE PEQUEÑA ABAJO DERECHA ★★★
+                 Cambia el src="" con tu foto.
+                 Ideal: seniors jugando tenis o pickleball (con personas visibles). -->
+            <div>
+                <img
+                    id="lifestyle-bottom"
+                    src="https://i.postimg.cc/sgdcj1fS/fun-sports-programs.webp"
+                    alt="Active 55+ seniors playing tennis at Valencia"
+                    loading="lazy"
+                    style="height:100%; object-fit:cover;"
+                />
+            </div>
+
+        </div>
+        <div class="lifestyle-panel fade-up">
+            <span class="eyebrow">Active &amp; Vibrant Living</span>
+            <h2 class="section-title light">Valencia Offers the Best 55+ Florida Lifestyle</h2> <!-- ★ TÍTULO -->
+            <div class="rule"></div>
+            <p class="section-body light"> <!-- ★ TEXTO -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+            </p>
+            <div class="amenity-grid">
+                <!-- ★ ETIQUETAS DE AMENIDADES: cambia el texto de cada amenity-label -->
+                <div class="amenity"><div class="amenity-icon"><svg viewBox="0 0 24 24"><path d="M12 3C7.59 3 4 6.59 4 11c0 2.03.76 3.87 2 5.28V21l6-2 6 2v-4.72A7.96 7.96 0 0020 11c0-4.41-3.59-8-8-8zm0 14l-4 1.33v-2.59A7.94 7.94 0 0012 17a7.94 7.94 0 004-1.26v2.59L12 17z"/></svg></div><span class="amenity-label">Resort Pools</span></div>
+                <div class="amenity"><div class="amenity-icon"><svg viewBox="0 0 24 24"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/></svg></div><span class="amenity-label">Fitness &amp; Wellness</span></div>
+                <div class="amenity"><div class="amenity-icon"><svg viewBox="0 0 24 24"><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg></div><span class="amenity-label">Tennis &amp; Pickleball</span></div>
+                <div class="amenity"><div class="amenity-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div><span class="amenity-label">Social Clubs</span></div>
+                <div class="amenity"><div class="amenity-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><span class="amenity-label">Clubhouse Events</span></div>
+                <div class="amenity"><div class="amenity-icon"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg></div><span class="amenity-label">Activities Calendar</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 6 — LOCATION
+     ★★★ FOTO TARJETA IZQUIERDA (Valencia Parc):
+         id="location-parc" → cambia src=""
+         Ideal: Port St. Lucie, costa este Florida
+
+     ★★★ FOTO TARJETA DERECHA (Valencia Sky):
+         id="location-sky" → cambia src=""
+         Ideal: Boynton Beach, Palm Beach County
+
+     ★ ETIQUETA AZUL ARRIBA: class="loc-tag"
+     ★ TÍTULO DE LA CARD:    class="loc-title"
+     ★ TEXTO DE LA CARD:     class="loc-body"
+     ★ BOTÓN CADA CARD:      <a class="btn btn-primary btn-sm">
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    .location { background: var(--off-white); padding: 100px 52px; }
+    .location-header { text-align: center; max-width: 640px; margin: 0 auto 60px; }
+    .location-header .rule { margin: 0 auto; }
+    .loc-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 1240px; margin: 0 auto; }
+    .loc-card { position: relative; border-radius: 3px; overflow: hidden; height: 480px; }
+    .loc-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .65s ease; }
+    .loc-card:hover img { transform: scale(1.07); }
+    .loc-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,50,98,.88) 0%, rgba(0,50,98,.3) 52%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 40px 38px; }
+    .loc-tag   { font-family: var(--fh); font-size: 10.5px; letter-spacing: .28em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+    .loc-title { font-family: var(--fh); font-size: 26px; font-weight: 200; letter-spacing: .08em; text-transform: uppercase; color: white; margin-bottom: 12px; }
+    .loc-body  { font-size: 13.5px; color: rgba(255,255,255,.75); line-height: 1.65; margin-bottom: 26px; }
+    @media (max-width:1080px) { .loc-cards { grid-template-columns: 1fr; } .loc-card { height: 400px; } }
+    @media (max-width:768px)  { .location { padding: 70px 24px; } }
+</style>
+
+<section class="location" id="location">
+    <div class="location-header fade-up">
+        <span class="eyebrow">Prime Florida Destinations</span>
+        <h2 class="section-title">Located in the Best<br>Florida Locations</h2> <!-- ★ TÍTULO -->
+        <div class="rule"></div>
+        <p class="section-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <!-- ★ TEXTO -->
+    </div>
+    <div class="loc-cards">
+
+        <!-- TARJETA IZQUIERDA: Valencia Parc -->
+        <div class="loc-card fade-up d1">
+            <!-- ★★★ FOTO VALENCIA PARC ★★★ — cambia el src="" -->
+            <img
+                id="location-parc"
+                src="https://i.postimg.cc/LsV6Djk9/vcr-julia-gr-z.webp"
+                alt="Port St. Lucie, Florida East Coast"
+                loading="lazy"
+            />
+            <div class="loc-overlay">
+                <span class="loc-tag">East Coast · Port St. Lucie</span>     <!-- ★ ETIQUETA -->
+                <h3 class="loc-title">Valencia Parc<br>at Riverland</h3>     <!-- ★ TÍTULO -->
+                <p class="loc-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et aliquip.</p> <!-- ★ TEXTO -->
+                <a href="https://www.glhomes.com/valencia-parc-at-riverland/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                    Explore Valencia Parc <!-- ★ TEXTO BOTÓN -->
+                    <span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- TARJETA DERECHA: Valencia Sky -->
+        <div class="loc-card fade-up d2">
+            <!-- ★★★ FOTO VALENCIA SKY ★★★ — cambia el src="" -->
+            <img
+                id="location-sky"
+                src="https://i.postimg.cc/85VMJdpr/horizon-05-k-dr01.webp"
+                alt="Boynton Beach, Florida — Palm Beach County"
+                loading="lazy"
+            />
+            <div class="loc-overlay">
+                <span class="loc-tag">Palm Beach County · Boynton Beach</span> <!-- ★ ETIQUETA -->
+                <h3 class="loc-title">Valencia Sky</h3>                         <!-- ★ TÍTULO -->
+                <p class="loc-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et aliquip.</p> <!-- ★ TEXTO -->
+                <a href="https://www.glhomes.com/valencia-sky/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                    Explore Valencia Sky <!-- ★ TEXTO BOTÓN -->
+                    <span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 7 — LEAD FORM
+     ★ TÍTULO:        class="section-title light" en form-info
+     ★ TEXTO:         class="section-body light" en form-info
+     ★ CAMPOS REQUERIDOS (del brief):
+       First Name (id="fn") · Last Name (id="ln") · Email (id="em")
+     ★ BOTÓN ENVIAR:  class="form-submit" → cambia texto
+     ★ FONDO COLOR:   background en .form-section CSS
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    .form-section { background: linear-gradient(145deg, #002a54 0%, var(--navy) 100%); padding: 100px 52px; position: relative; overflow: hidden; }
+    .form-section::before { content: ''; position: absolute; top: -220px; right: -180px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(0,151,204,.13) 0%, transparent 68%); pointer-events: none; }
+    .form-section::after  { content: ''; position: absolute; bottom: -160px; left: -120px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(0,151,204,.08) 0%, transparent 70%); pointer-events: none; }
+    .form-wrap { position: relative; z-index: 1; max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .brochure-box { margin-top: 40px; padding: 26px 28px; border: 1px solid rgba(0,151,204,.32); border-radius: 4px; background: rgba(0,151,204,.07); display: flex; align-items: flex-start; gap: 18px; }
+    .brochure-ico { width: 48px; height: 56px; border-radius: 3px; background: var(--blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .brochure-ico svg { width: 22px; height: 22px; fill: white; }
+    .brochure-txt h4 { font-family: var(--fh); font-size: 13px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--blue); margin-bottom: 5px; }
+    .brochure-txt p { font-size: 13px; color: rgba(255,255,255,.66); line-height: 1.58; }
+    .contact-card { background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.1); border-radius: 5px; padding: 48px 44px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .fg { margin-bottom: 22px; }
+    .fg label { display: block; font-family: var(--fh); font-size: 10.5px; font-weight: 400; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-bottom: 7px; }
+    .fg.req label::after { content: ' *'; color: var(--blue); }
+    .fg input, .fg select { width: 100%; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 3px; color: white; font-family: var(--fb); font-size: 15px; padding: 13px 17px; outline: none; transition: border-color .2s, background .2s; -webkit-appearance: none; appearance: none; }
+    .fg input::placeholder { color: rgba(255,255,255,.28); }
+    .fg input:focus, .fg select:focus { border-color: var(--blue); background: rgba(255,255,255,.1); }
+    .fg select option { background: #003262; color: white; }
+    .form-submit { width: 100%; padding: 17px; background: var(--blue); color: white; border: none; border-radius: 50px; font-family: var(--fh); font-size: 13px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; cursor: pointer; margin-top: 6px; transition: background .28s, box-shadow .28s, transform .22s; }
+    .form-submit:hover { background: #007aaa; box-shadow: 0 8px 26px rgba(0,151,204,.32); transform: translateY(-2px); }
+    .form-disc { font-size: 11px; color: rgba(255,255,255,.36); text-align: center; margin-top: 14px; line-height: 1.55; }
+    .form-success { text-align: center; padding: 52px 20px; }
+    .form-success .check-ring { width: 72px; height: 72px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
+    .form-success .check-ring svg { width: 34px; height: 34px; fill: white; }
+    .form-success h3 { font-family: var(--fh); font-weight: 300; font-size: 26px; letter-spacing: .1em; text-transform: uppercase; color: white; margin-bottom: 14px; }
+    .form-success p { font-size: 15px; color: rgba(255,255,255,.7); line-height: 1.7; }
+    @media (max-width:1080px) { .form-wrap { grid-template-columns: 1fr; gap: 52px; } }
+    @media (max-width:768px) { .form-section { padding: 70px 24px; } .contact-card { padding: 34px 24px; } .form-row { grid-template-columns: 1fr; } }
+</style>
+
+<section class="form-section" id="contact">
+    <div class="form-wrap">
+        <div class="form-info fade-up">
+            <span class="eyebrow">Get Started Today</span>
+            <h2 class="section-title light">Request Your<br>Free Digital Brochure</h2> <!-- ★ TÍTULO -->
+            <div class="rule"></div>
+            <p class="section-body light"> <!-- ★ TEXTO -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+            </p>
+            <div class="brochure-box">
+                <div class="brochure-ico"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+                <div class="brochure-txt">
+                    <h4>Free Digital Brochure</h4> <!-- ★ TÍTULO CAJA -->
+                    <p>Complete floor plans, pricing guides, and community details — delivered instantly to your inbox.</p> <!-- ★ TEXTO CAJA -->
+                </div>
+            </div>
+        </div>
+        <div class="contact-card fade-up d1" id="formCard">
+            <form id="leadForm" novalidate>
+                <div class="form-row">
+                    <div class="fg req"><label for="fn">First Name</label><input type="text" id="fn" name="firstName" placeholder="John" required autocomplete="given-name"></div>   <!-- ★ CAMPO 1 -->
+                    <div class="fg req"><label for="ln">Last Name</label><input type="text" id="ln" name="lastName" placeholder="Smith" required autocomplete="family-name"></div>    <!-- ★ CAMPO 2 -->
+                </div>
+                <div class="fg req"><label for="em">Email Address</label><input type="email" id="em" name="email" placeholder="john.smith@email.com" required autocomplete="email"></div> <!-- ★ CAMPO 3 -->
+                <div class="fg"><label for="ph">Phone Number</label><input type="tel" id="ph" name="phone" placeholder="(555) 000-0000" autocomplete="tel"></div>
+                <div class="fg">
+                    <label for="cm">Community of Interest</label>
+                    <select id="cm" name="community"><option value="" disabled selected>Select a community</option><option value="parc">Valencia Parc at Riverland</option><option value="sky">Valencia Sky</option><option value="both">Both Communities</option></select>
+                </div>
+                <div class="fg">
+                    <label for="tl">Purchase Timeline</label>
+                    <select id="tl" name="timeline"><option value="" disabled selected>When are you looking to move?</option><option value="asap">As soon as possible</option><option value="6m">Within 6 months</option><option value="1y">Within 1 year</option><option value="browse">Just exploring</option></select>
+                </div>
+                <button type="submit" class="form-submit">Send Me the Brochure</button> <!-- ★ BOTÓN ENVIAR -->
+                <p class="form-disc">By submitting you agree to receive communications from GL Homes.<br>Your information is private and secure.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 8 — FOOTER
+     ★ LOGO:      class="footer-logo"
+     ★ TAGLINE:   class="footer-tagline"
+     ★ LINKS:     edita los <a> en cada footer-links-group
+     ★ COPYRIGHT: class="footer-bottom"
+     ═══════════════════════════════════════════════════════════ -->
+<style>
+    footer { background: #001c3a; padding: 60px 52px 40px; }
+    .footer-inner { max-width: 1240px; margin: 0 auto; }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .footer-brand { max-width: 300px; }
+    .footer-logo { font-family: var(--fh); font-weight: 100; font-size: 28px; letter-spacing: .38em; text-transform: uppercase; color: white; margin-bottom: 16px; display: block; }
+    .footer-tagline { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.7; }
+    .footer-links-group h5 { font-family: var(--fh); font-size: 11px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 18px; }
+    .footer-links-group ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links-group a { font-size: 13.5px; color: rgba(255,255,255,.6); transition: color .2s; }
+    .footer-links-group a:hover { color: var(--blue); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 28px; font-size: 12px; color: rgba(255,255,255,.32); }
+    @media (max-width:768px) { footer { padding: 48px 24px 32px; } .footer-top { flex-direction: column; } .footer-bottom { flex-direction: column; text-align: center; } }
+</style>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="footer-logo">Valencia</span> <!-- ★ LOGO -->
+                <p class="footer-tagline">Florida's premier 55+ communities by GL Homes — where an exceptional lifestyle begins.</p> <!-- ★ TAGLINE -->
+            </div>
+            <div class="footer-links-group">
+                <h5>Communities</h5>
+                <ul>
+                    <li><a href="https://www.glhomes.com/valencia-parc-at-riverland/" target="_blank" rel="noopener">Valencia Parc at Riverland</a></li>
+                    <li><a href="https://www.glhomes.com/valencia-sky/" target="_blank" rel="noopener">Valencia Sky</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-group">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="#homes">New Homes</a></li>
+                    <li><a href="#lifestyle">Lifestyle</a></li>
+                    <li><a href="#location">Locations</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-group">
+                <h5>GL Homes</h5>
+                <ul>
+                    <li><a href="https://www.glhomes.com" target="_blank" rel="noopener">glhomes.com</a></li>
+                    <li><a href="#contact">Request Brochure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>©️ 2024 GL Homes. All rights reserved. Equal Housing Opportunity.</span>
+            <span>Prices and availability subject to change without notice. Images are for illustrative purposes.</span>
+        </div>
+    </div>
+</footer>
+
+
+<!-- JAVASCRIPT — No es necesario editar normalmente -->
+<script>
+(function () {
+    'use strict';
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+    window.toggleNav = function () { document.getElementById('navMenu').classList.toggle('open'); };
+    document.querySelectorAll('.nav-menu a').forEach(a => a.addEventListener('click', () => document.getElementById('navMenu').classList.remove('open')));
+    const heroBg = document.getElementById('heroBg');
+    window.addEventListener('scroll', () => { heroBg.style.transform = `scale(1.06) translateY(${window.scrollY * 0.28}px)`; }, { passive: true });
+    const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    document.getElementById('leadForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const fn = this.firstName.value.trim();
+        const ln = this.lastName.value.trim();
+        const em = this.email.value.trim();
+        if (!fn || !ln || !em) { alert('Please complete all required fields: First Name, Last Name, and Email.'); return; }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { alert('Please enter a valid email address.'); return; }
+        document.getElementById('formCard').innerHTML = `
+            <div class="form-success">
+                <div class="check-ring"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+                <h3>Thank You, ${fn}!</h3>
+                <p>Your digital brochure is on its way to <strong style="color:var(--blue);">${em}</strong>.<br>A Valencia lifestyle specialist will be in touch shortly.</p>
+            </div>`;
+    });
+})();
+</script>
+
+</body>
+</html>

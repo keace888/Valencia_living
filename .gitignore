@@ -1,0 +1,6 @@
+# Claude Code internals
+.claude/
+
+# BMad framework internals
+_bmad/
+_bmad-output/
