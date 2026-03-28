@@ -4,3 +4,12 @@
 # BMad framework internals
 _bmad/
 _bmad-output/
+
+# Node
+node_modules/
+
+# Local database
+data/
+
+# Env
+.env

@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Best 55+ Lifestyle in Florida | Valencia by GL Homes</title>
+<meta name="description" content="Florida's premier 55+ communities. Valencia by GL Homes — new construction homes from the mid $300s to $2M."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<style>
+/* ─── TOKENS ─────────────────────────────────── */
+:root {
+  --navy:     #003262;
+  --blue:     #0097CC;
+  --blue-hov: #007aaa;
+  --white:    #ffffff;
+  --off:      #f5f7fa;
+  --light:    #edf0f5;
+  --text:     #1c2533;
+  --muted:    #5d6b7e;
+  --border:   #d8dde8;
+  --fh: 'Futura PT','Josefin Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --fb: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  --ease: cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--fb);color:var(--text);overflow-x:hidden;line-height:1.6;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+
+/* ─── SHARED ─────────────────────────────────── */
+.eyebrow{
+  display:block;font-family:var(--fh);font-size:10px;font-weight:400;
+  letter-spacing:.44em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:13px;
+}
+.eyebrow.on-dark{color:#5dd3f5;}
+
+.section-title{
+  font-family:var(--fh);font-weight:300;
+  font-size:clamp(26px,3.2vw,44px);
+  letter-spacing:.07em;text-transform:uppercase;
+  color:var(--navy);line-height:1.12;margin-bottom:8px;
+}
+.section-title.on-dark{color:var(--white);}
+
+.rule{display:none;}
+.rule.on-dark{display:none;}
+
+.body-copy{
+  font-family:var(--fb);font-size:15px;font-weight:300;
+  color:var(--muted);line-height:1.9;
+}
+.body-copy.on-dark{color:rgba(255,255,255,.68);}
+
+/* ─── BUTTONS ────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  font-family:var(--fh);font-size:9.5px;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;
+  height:38px;padding:0 18px;border-radius:50px;
+  width:auto;min-width:0;
+  border:2px solid transparent;cursor:pointer;
+  white-space:nowrap;
+  transition:background .26s var(--ease),
+             border-color .26s var(--ease),
+             color .26s var(--ease),
+             box-shadow .26s var(--ease),
+             transform .22s var(--ease);
+}
+.btn svg{width:12px;height:12px;flex-shrink:0;fill:currentColor;}
+
+/* Primary: navy fill */
+.btn-primary{
+  background:var(--navy);color:var(--white);border-color:var(--navy);
+}
+.btn-primary:hover{
+  background:var(--blue);border-color:var(--blue);
+  box-shadow:0 8px 24px rgba(0,151,204,.32);
+  transform:translateY(-2px);
+}
+
+/* Secondary: navy outline */
+.btn-secondary{
+  background:transparent;color:var(--navy);border-color:var(--navy);
+}
+.btn-secondary:hover{
+  background:var(--blue);border-color:var(--blue);color:var(--white);
+  transform:translateY(-2px);
+}
+
+/* White solid (hero) */
+.btn-white{
+  background:var(--white);color:var(--navy);border-color:var(--white);
+  box-shadow:0 4px 20px rgba(0,0,0,.15);
+}
+.btn-white:hover{
+  background:var(--off);
+  box-shadow:0 10px 32px rgba(0,0,0,.22);
+  transform:translateY(-2px);
+}
+
+/* Ghost (hero) — subtle glass */
+.btn-ghost{
+  background:rgba(255,255,255,.10);color:var(--white);
+  border-color:rgba(255,255,255,.52);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.btn-ghost:hover{
+  background:rgba(255,255,255,.20);border-color:rgba(255,255,255,.85);
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(0,0,0,.18);
+}
+
+/* ─── FADE-UP ─────────────────────────────────── */
+.fu{opacity:0;transform:translateY(24px);transition:opacity .65s var(--ease),transform .65s var(--ease);}
+.fu.d1{transition-delay:.12s;}
+.fu.d2{transition-delay:.24s;}
+.fu.in{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){
+  .fu{opacity:1;transform:none;}
+  *{transition-duration:.01ms!important;}
+  html{scroll-behavior:auto;}
+}
+
+/* ═══════════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════════ */
+.nav{
+  position:fixed;top:0;width:100%;z-index:900;
+  background:rgba(0,50,98,.95);backdrop-filter:blur(12px);
+  height:68px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 52px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  transition:height .28s var(--ease),box-shadow .28s;
+}
+.nav.scrolled{height:56px;box-shadow:0 4px 20px rgba(0,0,0,.26);}
+.nav-logo{
+  font-family:var(--fh);font-weight:100;font-size:22px;
+  letter-spacing:.44em;text-transform:uppercase;color:var(--white);
+}
+.nav-links{display:flex;align-items:center;gap:30px;}
+.nav-links a{
+  font-family:var(--fh);font-size:11px;font-weight:400;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.72);transition:color .2s;
+}
+.nav-links a:hover{color:var(--white);}
+.nav-cta{
+  background:var(--blue)!important;color:var(--white)!important;
+  padding:8px 22px;border-radius:30px;font-weight:600!important;
+}
+.nav-cta:hover{background:var(--blue-hov)!important;}
+
+.ham{
+  display:none;flex-direction:column;gap:5px;
+  background:none;border:none;padding:8px;cursor:pointer;
+}
+.ham span{
+  display:block;width:22px;height:1.5px;
+  background:#fff;border-radius:2px;
+  transition:transform .24s,opacity .24s;
+}
+.ham[aria-expanded=true] span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.ham[aria-expanded=true] span:nth-child(2){opacity:0;}
+.ham[aria-expanded=true] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+
+@media(max-width:768px){
+  .nav{padding:0 20px;}
+  .nav-links{
+    display:none;flex-direction:column;gap:0;
+    position:fixed;top:68px;left:0;right:0;
+    background:rgba(0,40,80,.98);
+    padding:12px 0;border-top:1px solid rgba(255,255,255,.08);
+  }
+  .nav-links.open{display:flex;}
+  .nav-links a{display:block;padding:13px 24px;font-size:13px;}
+  .ham{display:flex;}
+}
+
+/* ═══════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════ */
+.hero{
+  position:relative;height:100vh;min-height:640px;
+  display:flex;align-items:center;overflow:hidden;
+}
+/* Image — zero overlay, zero filter */
+.hero-bg{
+  position:absolute;inset:0;
+  background:url('https://i.postimg.cc/13hSc0MR/Home-Picture-Valencia.jpg') center 40%/cover no-repeat;
+  transform:scale(1.06);will-change:transform;
+}
+/* Purely typographic readability */
+.hero-content{
+  position:relative;z-index:2;
+  padding:0 80px;max-width:780px;
+}
+.hero-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--fh);font-size:10px;letter-spacing:.38em;text-transform:uppercase;
+  color:#fff;border:1px solid rgba(255,255,255,.4);
+  padding:8px 20px;border-radius:30px;margin-bottom:34px;
+  background:rgba(0,50,98,.32);backdrop-filter:blur(10px);
+}
+.hero-pill-dot{width:5px;height:5px;border-radius:50%;background:#5dd3f5;flex-shrink:0;}
+
+.hero h1{
+  font-family:var(--fh);font-weight:300;
+  font-size:clamp(40px,6vw,80px);
+  letter-spacing:.06em;text-transform:uppercase;
+  color:#fff;line-height:1.04;
+  /* Readable without overlay: subtle text-shadow only */
+  text-shadow:0 1px 2px rgba(0,0,0,.18),0 3px 14px rgba(0,0,0,.14);
+  margin-bottom:0;
+}
+.hero-rule{width:46px;height:2px;background:#fff;opacity:.65;margin:22px 0 20px;}
+.hero-sub{
+  font-family:var(--fh);font-weight:200;
+  font-size:clamp(12px,1.4vw,16px);
+  letter-spacing:.32em;text-transform:uppercase;
+  color:rgba(255,255,255,.9);
+  text-shadow:0 1px 6px rgba(0,0,0,.15);
+  margin-bottom:44px;
+}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;align-items:stretch;}
+.hero-btns .btn{height:38px;padding:0 20px;flex-shrink:0;}
+
+.scroll-cue{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  z-index:3;display:flex;flex-direction:column;align-items:center;gap:7px;
+  font-family:var(--fh);font-size:9px;letter-spacing:.28em;text-transform:uppercase;
+  color:rgba(255,255,255,.48);animation:bounce 2.4s ease-in-out infinite;
+}
+.scroll-line{width:1px;height:32px;background:linear-gradient(to bottom,rgba(255,255,255,.48),transparent);}
+@keyframes bounce{
+  0%,100%{transform:translateX(-50%) translateY(0);}
+  55%    {transform:translateX(-50%) translateY(7px);}
+}
+@media(max-width:1024px){.hero-content{padding:0 44px;}}
+@media(max-width:768px){
+  .hero-content{padding:0 22px;max-width:100%;}
+  .hero-btns{flex-direction:column;align-items:stretch;}
+  .hero-btns .btn{width:100%;justify-content:center;}
+}
+
+/* ═══════════════════════════════════════════════
+   STAT BAR
+═══════════════════════════════════════════════ */
+.stat-bar{
+  background:#001f3f;
+  display:flex;justify-content:center;flex-wrap:wrap;
+}
+.stat-item{
+  flex:1;min-width:150px;max-width:230px;
+  padding:26px 18px;text-align:center;
+  border-right:1px solid rgba(255,255,255,.08);
+  transition:background .2s;
+}
+.stat-item:last-child{border-right:none;}
+.stat-item:hover{background:rgba(255,255,255,.03);}
+.stat-n{
+  display:block;font-family:var(--fh);font-weight:200;font-size:28px;
+  letter-spacing:.04em;color:var(--blue);line-height:1;
+}
+.stat-l{
+  display:block;font-family:var(--fh);font-size:9px;
+  letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,.42);margin-top:6px;
+}
+@media(max-width:480px){
+  .stat-item{width:50%;border-bottom:1px solid rgba(255,255,255,.08);}
+  .stat-item:nth-child(2n){border-right:none;}
+}
+
+/* ═══════════════════════════════════════════════
+   HOMES
+═══════════════════════════════════════════════ */
+.homes-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  max-width:1440px;margin:0 auto;
+}
+.homes-img{position:relative;overflow:hidden;min-height:560px;}
+.homes-img img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .9s var(--ease);
+}
+.homes-img:hover img{transform:scale(1.04);}
+.homes-img-cap{
+  position:absolute;bottom:0;left:0;right:0;padding:13px 24px;
+  background:linear-gradient(to top,rgba(0,50,98,.62),transparent);
+  font-family:var(--fh);font-size:10px;letter-spacing:.2em;
+  text-transform:uppercase;color:rgba(255,255,255,.72);
+}
+.homes-body{
+  padding:84px 68px;
+  display:flex;flex-direction:column;justify-content:center;
+  background:var(--white);
+}
+/* Homes section buttons — unified with location card style */
+.homes-btns{
+  display:flex;flex-direction:column;gap:12px;
+  margin-top:36px;align-items:flex-start;
+}
+.btn-home{
+  display:inline-flex!important;align-items:center;justify-content:center;gap:12px;
+  width:auto!important;min-width:260px;max-width:none;height:56px;padding:0 36px;
+  border-radius:50px;border:2px solid transparent;
+  font-family:var(--fh);font-size:11px;font-weight:600;
+  letter-spacing:.26em;text-transform:uppercase;
+  white-space:nowrap;cursor:pointer;text-decoration:none;
+  transition:background .26s var(--ease),border-color .26s var(--ease),
+             color .26s var(--ease),box-shadow .26s var(--ease),transform .22s var(--ease);
+}
+.btn-home svg{display:inline-flex;width:13px;height:13px;flex-shrink:0;fill:currentColor;opacity:.85;}
+.btn-home--primary{
+  background:var(--navy);color:var(--white);border-color:var(--navy);
+}
+.btn-home--primary:hover{
+  background:var(--blue);border-color:var(--blue);
+  box-shadow:0 8px 24px rgba(0,151,204,.32);transform:translateY(-2px);
+}
+.btn-home--secondary{
+  background:transparent;color:var(--navy);border-color:var(--navy);
+}
+.btn-home--secondary:hover{
+  background:var(--blue);border-color:var(--blue);color:var(--white);
+  transform:translateY(-2px);
+}
+@media(max-width:768px){
+  .homes-btns{align-items:stretch;}
+  .btn-home{min-width:0;width:100%!important;}
+}
+
+@media(max-width:1080px){
+  .homes-grid{grid-template-columns:1fr;}
+  .homes-img{min-height:340px;}
+  .homes-body{padding:60px 40px;}
+}
+@media(max-width:768px){
+  .homes-body{padding:48px 24px;}
+}
+
+/* ═══════════════════════════════════════════════
+   LIFESTYLE
+═══════════════════════════════════════════════ */
+.lifestyle{display:flex;min-height:660px;}
+.ls-gallery{
+  flex:1.15;display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  gap:4px;
+}
+.ls-gallery .g-main{grid-row:span 2;}
+.ls-gallery img{width:100%;height:100%;object-fit:cover;display:block;}
+.ls-panel{
+  flex:.85;background:var(--navy);
+  padding:84px 60px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.amenity-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:12px;margin-top:30px;
+}
+.amenity{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 12px;
+  border:1px solid rgba(255,255,255,.08);border-radius:3px;
+  transition:background .2s,border-color .2s;
+}
+.amenity:hover{background:rgba(0,151,204,.1);border-color:rgba(0,151,204,.3);}
+.a-icon{
+  width:28px;height:28px;border-radius:50%;background:var(--blue);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.a-icon svg{width:13px;height:13px;fill:#fff;}
+.a-label{
+  font-family:var(--fh);font-size:10px;font-weight:400;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.82);
+}
+@media(max-width:1080px){
+  .lifestyle{flex-direction:column;}
+  .ls-gallery{grid-template-rows:260px 220px;}
+  .ls-gallery .g-main{grid-row:span 1;grid-column:span 2;}
+  .ls-panel{padding:60px 40px;}
+}
+@media(max-width:768px){
+  .ls-gallery{grid-template-rows:200px 170px;}
+  .ls-panel{padding:48px 24px;}
+  .amenity-grid{grid-template-columns:1fr;}
+}
+
+/* ═══════════════════════════════════════════════
+   LOCATION
+═══════════════════════════════════════════════ */
+.location{
+  background:var(--off);padding:92px 52px;
+  border-top:1px solid var(--border);
+}
+.loc-inner{max-width:1200px;margin:0 auto;}
+.loc-header{text-align:center;margin-bottom:60px;}
+.loc-header .rule{margin:14px auto 22px;}
+.loc-header .body-copy{max-width:460px;margin:0 auto;}
+
+.loc-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;
+}
+.loc-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:4px;overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:box-shadow .28s var(--ease),transform .28s var(--ease);
+}
+.loc-card:hover{
+  box-shadow:0 14px 44px rgba(0,50,98,.11);
+  transform:translateY(-3px);
+}
+.loc-card-img{position:relative;overflow:hidden;height:240px;}
+.loc-card-img img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .9s var(--ease);
+}
+.loc-card:hover .loc-card-img img{transform:scale(1.05);}
+.loc-badge{
+  position:absolute;top:14px;left:18px;
+  font-family:var(--fh);font-size:10px;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+  background:rgba(0,50,98,.52);backdrop-filter:blur(6px);
+  padding:5px 13px;border-radius:20px;
+}
+.loc-body{padding:28px 28px 32px;display:flex;flex-direction:column;flex:1;}
+.loc-tag{
+  display:block;font-family:var(--fh);font-size:9.5px;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:8px;
+}
+.loc-title{
+  font-family:var(--fh);font-weight:300;
+  font-size:clamp(20px,2vw,28px);
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--navy);line-height:1.12;margin-bottom:5px;
+}
+.loc-sub{
+  font-family:var(--fh);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:16px;
+}
+.loc-div{display:none;}
+.loc-feats{display:flex;flex-direction:column;gap:7px;margin-bottom:24px;flex:1;}
+.loc-feats li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:13px;font-weight:300;color:var(--muted);line-height:1.5;
+}
+.loc-feats li::before{
+  content:'';width:16px;height:1.5px;background:var(--blue);
+  flex-shrink:0;margin-top:9px;
+}
+
+.loc-body .btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:12px!important;
+  width:auto!important;min-width:260px!important;max-width:none!important;
+  height:56px!important;padding:0 36px!important;
+  font-size:11px!important;letter-spacing:.26em!important;
+  border-radius:50px!important;
+  align-self:flex-start!important;
+}
+.loc-body .btn svg{display:inline-flex!important;width:13px!important;height:13px!important;fill:currentColor!important;opacity:.85!important;}
+.loc-strip{
+  display:flex;margin-top:8px;
+  border:1px solid var(--border);border-radius:4px;
+  overflow:hidden;background:var(--white);
+}
+.loc-strip li{
+  flex:1;display:flex;align-items:center;gap:11px;
+  padding:18px 22px;
+  border-right:1px solid var(--border);
+  transition:background .2s;
+}
+.loc-strip li:last-child{border-right:none;}
+.loc-strip li:hover{background:var(--off);}
+.loc-dot{
+  width:7px;height:7px;border-radius:50%;background:var(--blue);
+  flex-shrink:0;box-shadow:0 0 0 4px rgba(0,151,204,.14);
+}
+.loc-city{
+  display:block;font-family:var(--fh);font-size:12px;font-weight:400;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--navy);
+}
+.loc-region{
+  display:block;font-family:var(--fh);font-size:9px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:3px;
+}
+
+@media(max-width:1080px){
+  .location{padding:72px 40px;}
+  .loc-grid{grid-template-columns:1fr;}
+}
+@media(max-width:768px){
+  .location{padding:60px 22px;}
+  .loc-strip{flex-direction:column;}
+  .loc-strip li{border-right:none;border-bottom:1px solid var(--border);}
+  .loc-strip li:last-child{border-bottom:none;}
+}
+
+/* ═══════════════════════════════════════════════
+   LEAD FORM
+═══════════════════════════════════════════════ */
+.form-section{
+  background:linear-gradient(145deg,#001529 0%,var(--navy) 55%,#00437a 100%);
+  padding:104px 52px;position:relative;overflow:hidden;
+}
+.form-section::before{
+  content:'';position:absolute;top:-160px;right:-120px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,151,204,.11) 0%,transparent 68%);
+  pointer-events:none;
+}
+.form-wrap{
+  position:relative;z-index:1;
+  max-width:1080px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;
+}
+
+/* Left copy */
+.form-left{}
+.form-headline{
+  font-family:var(--fh);font-weight:300;
+  font-size:clamp(26px,3vw,42px);
+  letter-spacing:.07em;text-transform:uppercase;
+  color:var(--white);line-height:1.14;margin-bottom:16px;
+}
+.form-left .rule{background:rgba(0,151,204,.55);margin-bottom:20px;}
+.form-desc{
+  font-size:15px;font-weight:300;
+  color:rgba(255,255,255,.64);line-height:1.9;margin-bottom:34px;
+}
+
+/* White form card */
+.form-card{
+  background:var(--white);border-radius:5px;
+  padding:42px 38px;
+  box-shadow:0 20px 64px rgba(0,0,0,.3);
+}
+.form-card-title{
+  font-family:var(--fh);font-size:11px;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;
+  color:var(--navy);margin-bottom:24px;
+  padding-bottom:16px;border-bottom:1px solid var(--border);
+}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+.fg{margin-bottom:15px;}
+.fg label{
+  display:block;font-family:var(--fh);font-size:9px;font-weight:600;
+  letter-spacing:.26em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:7px;
+}
+.fg.req label::after{content:' *';color:var(--blue);}
+.fg input,.fg select{
+  width:100%;background:var(--white);
+  border:1.5px solid var(--border);border-radius:4px;
+  color:var(--text);font-family:var(--fb);font-size:14px;font-weight:400;
+  padding:13px 16px;outline:none;
+  -webkit-appearance:none;appearance:none;
+  transition:border-color .22s,box-shadow .22s;
+}
+.fg input::placeholder{color:#b0bac8;}
+.fg input:hover,.fg select:hover{border-color:#aab4c2;}
+.fg input:focus,.fg select:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(0,151,204,.14);
+}
+.fg.err input,.fg.err select{border-color:#d94a4a;}
+.f-err{display:block;font-size:11px;color:#d94a4a;margin-top:4px;}
+
+.sel-wrap{position:relative;}
+.sel-wrap select{padding-right:38px;cursor:pointer;}
+/* Chevron icon */
+.sel-wrap::after{
+  content:'';position:absolute;right:14px;top:50%;
+  pointer-events:none;
+  border:5px solid transparent;
+  border-top-color:var(--muted);
+  transform:translateY(-2px);
+}
+.f-divider{border:none;border-top:1px solid var(--border);margin:16px 0 18px;}
+
+/* Download Brochure submit */
+.form-submit{
+  width:100%;height:38px;padding:0 20px;
+  background:var(--navy);color:var(--white);
+  border:2px solid var(--navy);border-radius:50px;
+  font-family:var(--fh);font-size:9.5px;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  box-shadow:0 6px 18px rgba(0,50,98,.2);
+  transition:background .26s var(--ease),border-color .26s var(--ease),
+             box-shadow .26s var(--ease),transform .22s var(--ease);
+}
+.form-submit svg{width:12px;height:12px;fill:rgba(255,255,255,.8);flex-shrink:0;stroke:rgba(255,255,255,.8);stroke-width:1.5;stroke-linejoin:round;}
+.form-submit:hover{
+  background:var(--blue);border-color:var(--blue);
+  box-shadow:0 10px 28px rgba(0,151,204,.32);
+  transform:translateY(-2px);
+}
+.form-submit:active{transform:none;}
+.form-disc{
+  font-size:10px;color:var(--muted);
+  text-align:center;margin-top:10px;line-height:1.55;
+}
+
+
+/* Inline trust note below form-desc */
+.trust-inline{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:18px;
+  padding:9px 14px;
+  border:1px solid rgba(201,169,110,.18);
+  border-radius:4px;
+  background:rgba(255,255,255,.05);
+}
+.trust-inline svg{width:14px;height:14px;fill:#c9a96e;flex-shrink:0;opacity:.70;}
+.trust-inline span{
+  font-family:var(--fh);font-size:9px;font-weight:400;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.52);
+}
+
+/* Success */
+.form-success{text-align:center;padding:44px 20px;}
+.check-ring{
+  width:60px;height:60px;border-radius:50%;
+  background:var(--blue);display:flex;align-items:center;justify-content:center;
+  margin:0 auto 20px;
+}
+.check-ring svg{width:26px;height:26px;fill:#fff;}
+.form-success h3{
+  font-family:var(--fh);font-weight:300;font-size:24px;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--navy);margin-bottom:10px;
+}
+.form-success p{font-size:14px;color:var(--muted);line-height:1.7;}
+
+@media(max-width:1080px){.form-wrap{grid-template-columns:1fr;gap:44px;}}
+@media(max-width:768px){
+  .form-section{padding:68px 22px;}
+  .form-card{padding:30px 22px;}
+  .f-row{grid-template-columns:1fr;}
+}
+
+/* ═══════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════ */
+footer{
+  background:var(--off);
+  border-top:1px solid var(--border);
+  padding:68px 60px 40px;
+}
+.footer-inner{max-width:1240px;margin:0 auto;}
+.footer-top{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:56px;padding-bottom:44px;border-bottom:1px solid var(--border);
+}
+.footer-logo{
+  font-family:var(--fh);font-weight:100;font-size:22px;
+  letter-spacing:.44em;text-transform:uppercase;
+  color:var(--navy);margin-bottom:13px;display:block;
+}
+.footer-tag{font-size:13px;font-weight:300;color:var(--muted);line-height:1.8;}
+.f-col h5{
+  font-family:var(--fh);font-size:10px;font-weight:600;
+  letter-spacing:.24em;text-transform:uppercase;
+  color:var(--navy);margin-bottom:18px;
+}
+.f-col ul{display:flex;flex-direction:column;gap:10px;}
+.f-col a{
+  font-size:13px;font-weight:300;color:var(--muted);
+  display:inline-block;transition:color .2s,transform .2s;
+}
+.f-col a:hover{color:var(--navy);transform:translateX(3px);}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  padding-top:24px;font-size:11px;color:var(--muted);gap:16px;
+}
+@media(max-width:1080px){
+  footer{padding:56px 40px 36px;}
+  .footer-top{grid-template-columns:1fr 1fr;gap:40px;}
+}
+@media(max-width:768px){
+  footer{padding:48px 22px 30px;}
+  .footer-top{grid-template-columns:1fr;gap:32px;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+}
+</style>
+
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════════ -->
+<nav class="nav" id="nav" aria-label="Main navigation">
+  <a href="#top" class="nav-logo">Valencia</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#homes">Homes</a></li>
+    <li><a href="#lifestyle">Lifestyle</a></li>
+    <li><a href="#location">Locations</a></li>
+    <li><a href="#contact" class="nav-cta">Request Info</a></li>
+  </ul>
+  <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<section class="hero" id="top" aria-label="Valencia hero">
+  <div class="hero-bg" id="heroBg" role="presentation"></div>
+  <!-- Zero overlay — image fully visible -->
+  <div class="hero-content" id="main-content">
+    <div class="hero-pill">
+      <span class="hero-pill-dot" aria-hidden="true"></span>
+      Florida's Premier 55+ Communities
+    </div>
+    <h1>Best 55+<br>Lifestyle<br>in Florida</h1>
+    <div class="hero-rule" role="presentation"></div>
+    <p class="hero-sub">Valencia Homes from the Mid $300s to $2M</p>
+    <div class="hero-btns">
+      <a href="#homes"   class="btn btn-white">Explore Communities</a>
+      <a href="#contact" class="btn btn-ghost">Request a Brochure</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     STAT BAR
+═══════════════════════════════════════════════ -->
+<div class="stat-bar" role="region" aria-label="Key statistics">
+  <div class="stat-item">
+    <span class="stat-n" data-count="40" data-suffix="+">40+</span>
+    <span class="stat-l">Years of Excellence</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-n" data-count="100000" data-suffix="+">100,000+</span>
+    <span class="stat-l">Happy Homeowners</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-n">Mid $300s</span>
+    <span class="stat-l">Starting Price</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-n" data-count="2">2</span>
+    <span class="stat-l">Florida Coasts</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     HOMES
+═══════════════════════════════════════════════ -->
+<section id="homes" style="background:var(--white);">
+  <div class="homes-grid">
+    <div class="homes-img">
+      <img
+        src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=85"
+        alt="New luxury home at a Valencia community"
+        loading="lazy"
+      />
+      <div class="homes-img-cap">Valencia · New Construction Homes</div>
+    </div>
+    <div class="homes-body fu">
+      <span class="eyebrow">Exceptional Living</span>
+      <h2 class="section-title">New Homes<br>Designed for 55+</h2>
+      <div class="rule"></div>
+      <p class="body-copy">
+        At Valencia, every residence is an expression of the life you've earned.
+        Spacious, light-filled floor plans pair premium finishes and private outdoor
+        living with the craftsmanship four decades of GL Homes excellence has refined
+        to an art.
+        <br><br>
+        From designer villas to grand estate homes, each floor plan is tailored for
+        the way 55+ homeowners actually live — low-maintenance, beautifully appointed,
+        built around the moments that matter most.
+      </p>
+      <!-- Horizontal, equal-height buttons -->
+      <div class="homes-btns">
+        <a
+          href="https://www.glhomes.com/valencia-parc-at-riverland/"
+          class="btn-home btn-home--primary"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Explore Valencia Parc at Riverland, opens in new tab"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+          Explore Valencia Parc
+        </a>
+        <a
+          href="https://www.glhomes.com/valencia-sky/"
+          class="btn-home btn-home--secondary"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Explore Valencia Sky, opens in new tab"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+          Explore Valencia Sky
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     LIFESTYLE
+═══════════════════════════════════════════════ -->
+<section id="lifestyle">
+  <div class="lifestyle">
+    <div class="ls-gallery" aria-hidden="true">
+      <div class="g-main">
+        <img
+          src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=800&q=85"
+          alt="Active seniors at a Valencia community clubhouse"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <img
+          src="https://i.postimg.cc/GmcFzxGx/rl-resistamce-pool-ladies-(1).webp"
+          alt="Residents at the resort pool"
+          loading="lazy"
+          style="height:100%;object-fit:cover;"
+        />
+      </div>
+      <div>
+        <img
+          src="https://i.postimg.cc/FzH6xzkg/activity-slide-3.webp"
+          alt="Active 55+ residents at Valencia"
+          loading="lazy"
+          style="height:100%;object-fit:cover;"
+        />
+      </div>
+    </div>
+    <div class="ls-panel fu">
+      <span class="eyebrow on-dark">Active &amp; Vibrant Living</span>
+      <h2 class="section-title on-dark">Valencia Offers the Best<br>55+ Florida Lifestyle</h2>
+      <div class="rule on-dark"></div>
+      <p class="body-copy on-dark">
+        Life at Valencia isn't something you schedule — it's something you fall into
+        naturally. Morning swims, afternoons on the court, evenings with neighbors
+        who become your closest friends.
+        <br><br>
+        At the heart of every community is a resort-style clubhouse hosting fitness
+        classes, culinary events, live entertainment, and curated experiences year-round.
+      </p>
+      <ul class="amenity-grid" aria-label="Community amenities">
+        <li class="amenity">
+          <div class="a-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3C7.59 3 4 6.59 4 11c0 2.03.76 3.87 2 5.28V21l6-2 6 2v-4.72A7.96 7.96 0 0020 11c0-4.41-3.59-8-8-8z"/></svg>
+          </div>
+          <span class="a-label">Resort Pools</span>
+        </li>
+        <li class="amenity">
+          <div class="a-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/></svg>
+          </div>
+          <span class="a-label">Fitness &amp; Wellness</span>
+        </li>
+        <li class="amenity">
+          <div class="a-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+          </div>
+          <span class="a-label">Tennis &amp; Pickleball</span>
+        </li>
+        <li class="amenity">
+          <div class="a-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <span class="a-label">Social Clubs</span>
+        </li>
+        <li class="amenity">
+          <div class="a-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <span class="a-label">Clubhouse Events</span>
+        </li>
+        <li class="amenity">
+          <div class="a-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+          </div>
+          <span class="a-label">Activities Calendar</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     LOCATION
+═══════════════════════════════════════════════ -->
+<section class="location" id="location">
+  <div class="loc-inner">
+
+    <div class="loc-header fu">
+      <span class="eyebrow" style="display:block;">Prime Florida Destinations</span>
+      <h2 class="section-title">Located in the Best<br>Florida Locations</h2>
+      <div class="rule"></div>
+      <p class="body-copy" style="max-width:460px;margin:0 auto;">
+        Every Valencia community is placed in one of Florida's most desirable addresses —
+        world-class dining, pristine coastlines, and vibrant culture always within reach.
+      </p>
+    </div>
+
+    <div class="loc-grid" style="margin-top:0;">
+      <div class="loc-card fu">
+        <div class="loc-card-img">
+          <img
+            src="https://i.postimg.cc/LsV6Djk9/vcr-julia-gr-z.webp"
+            alt="Valencia Parc at Riverland — Port St. Lucie"
+            loading="lazy"
+          />
+          <span class="loc-badge">01 · Valencia Parc</span>
+        </div>
+        <div class="loc-body">
+          <span class="loc-tag">East Coast · Port St. Lucie, FL</span>
+          <h3 class="loc-title">Valencia Parc<br>at Riverland</h3>
+          <p class="loc-sub">Florida's Treasure Coast</p>
+          <div class="loc-div"></div>
+          <ul class="loc-feats">
+            <li>Award-winning master-planned community</li>
+            <li>Resort clubhouse, pools &amp; fitness center</li>
+            <li>New homes from the mid $300s</li>
+            <li>Minutes from Atlantic beaches</li>
+          </ul>
+          <a
+            href="https://www.glhomes.com/valencia-parc-at-riverland/"
+            class="btn btn-primary"
+            target="_blank" rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+            Explore Valencia Parc
+          </a>
+        </div>
+      </div>
+
+      <div class="loc-card fu d1">
+        <div class="loc-card-img">
+          <img
+            src="https://i.postimg.cc/85VMJdpr/horizon-05-k-dr01.webp"
+            alt="Valencia Sky — Boynton Beach"
+            loading="lazy"
+          />
+          <span class="loc-badge">02 · Valencia Sky</span>
+        </div>
+        <div class="loc-body">
+          <span class="loc-tag">Palm Beach County · Boynton Beach, FL</span>
+          <h3 class="loc-title">Valencia Sky</h3>
+          <p class="loc-sub">The Heart of Palm Beach County</p>
+          <div class="loc-div"></div>
+          <ul class="loc-feats">
+            <li>Premier address in Palm Beach County</li>
+            <li>Signature clubhouse with resort pools &amp; spa</li>
+            <li>New construction homes for 55+ living</li>
+            <li>Minutes from Palm Beach dining &amp; the shore</li>
+          </ul>
+          <a
+            href="https://www.glhomes.com/valencia-sky/"
+            class="btn btn-primary"
+            target="_blank" rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+            Explore Valencia Sky
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="loc-strip" aria-label="Valencia locations">
+      <li>
+        <span class="loc-dot" aria-hidden="true"></span>
+        <div><span class="loc-city">Port St. Lucie</span><span class="loc-region">Treasure Coast · East FL</span></div>
+      </li>
+      <li>
+        <span class="loc-dot" aria-hidden="true"></span>
+        <div><span class="loc-city">Boynton Beach</span><span class="loc-region">Palm Beach County · East FL</span></div>
+      </li>
+      <li>
+        <span class="loc-dot" aria-hidden="true"></span>
+        <div><span class="loc-city">Naples</span><span class="loc-region">Southwest FL · Gulf Coast</span></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     LEAD FORM
+═══════════════════════════════════════════════ -->
+<section class="form-section" id="contact" aria-labelledby="form-heading">
+  <div class="form-wrap">
+
+    <div class="form-left fu">
+      <span class="eyebrow on-dark">Get Started Today</span>
+      <h2 class="form-headline" id="form-heading">Request Your<br>Free Digital<br>Brochure</h2>
+      <div class="rule"></div>
+      <p class="form-desc">
+        Join thousands of homeowners who chose Valencia for their next chapter.
+        Receive complete floor plans, current pricing, and exclusive community
+        invitations delivered to your inbox within minutes.
+      </p>
+      <div class="trust-inline">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        <span>Your information is private &amp; secure. No spam, ever.</span>
+      </div>
+    </div>
+
+    <div id="formCard" class="fu d1">
+      <div class="form-card">
+        <p class="form-card-title">Request Information</p>
+        <form id="leadForm" novalidate autocomplete="off" aria-label="Request a brochure">
+          <div class="f-row">
+            <div class="fg req">
+              <label for="fn">First Name</label>
+              <input type="text" id="fn" name="firstName" placeholder="John" required autocomplete="given-name"/>
+            </div>
+            <div class="fg req">
+              <label for="ln">Last Name</label>
+              <input type="text" id="ln" name="lastName" placeholder="Smith" required autocomplete="family-name"/>
+            </div>
+          </div>
+          <div class="fg req">
+            <label for="em">Email Address</label>
+            <input type="email" id="em" name="email" placeholder="john.smith@email.com" required autocomplete="email"/>
+          </div>
+          <div class="fg">
+            <label for="ph">Phone Number</label>
+            <input type="tel" id="ph" name="phone" placeholder="(555) 000-0000" autocomplete="tel"/>
+          </div>
+          <div class="fg">
+            <label for="cm">Select Community</label>
+            <div class="sel-wrap">
+              <select id="cm" name="community">
+                <option value="" disabled selected>Select a community</option>
+                <option value="parc">Valencia Parc at Riverland</option>
+                <option value="sky">Valencia Sky</option>
+                <option value="both">Both Communities</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label for="tl">Purchase Timeline</label>
+            <div class="sel-wrap">
+              <select id="tl" name="timeline">
+                <option value="" disabled selected>When are you looking to move?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="6m">Within 6 months</option>
+                <option value="1y">Within 1 year</option>
+                <option value="browse">Just exploring</option>
+              </select>
+            </div>
+          </div>
+          <hr class="f-divider"/>
+          <button type="submit" class="form-submit">
+            Download Brochure
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <span class="footer-logo">Valencia</span>
+        <p class="footer-tag">Florida's premier 55+ communities by GL Homes — where an exceptional lifestyle begins.</p>
+      </div>
+      <div class="f-col">
+        <h5>Communities</h5>
+        <ul>
+          <li><a href="https://www.glhomes.com/valencia-parc-at-riverland/" target="_blank" rel="noopener">Valencia Parc at Riverland</a></li>
+          <li><a href="https://www.glhomes.com/valencia-sky/" target="_blank" rel="noopener">Valencia Sky</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#homes">New Homes</a></li>
+          <li><a href="#lifestyle">Lifestyle</a></li>
+          <li><a href="#location">Locations</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h5>GL Homes</h5>
+        <ul>
+          <li><a href="https://www.glhomes.com" target="_blank" rel="noopener">glhomes.com</a></li>
+          <li><a href="#contact">Request Brochure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 GL Homes. All rights reserved. Equal Housing Opportunity.</span>
+      <span>Prices subject to change. Images are illustrative.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+
+  /* NAV scroll */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll',()=>{
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  },{passive:true});
+
+  /* Mobile menu */
+  const ham = document.getElementById('ham');
+  const nl  = document.getElementById('navLinks');
+  ham.addEventListener('click',function(){
+    const o = nl.classList.toggle('open');
+    this.setAttribute('aria-expanded', String(o));
+    this.setAttribute('aria-label', o ? 'Close menu' : 'Open menu');
+  });
+  nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    nl.classList.remove('open');
+    ham.setAttribute('aria-expanded','false');
+    ham.setAttribute('aria-label','Open menu');
+  }));
+
+  /* Hero parallax */
+  const bg = document.getElementById('heroBg');
+  if(bg) window.addEventListener('scroll',()=>{
+    bg.style.transform = `scale(1.06) translateY(${window.scrollY*.25}px)`;
+  },{passive:true});
+
+  /* Fade-up observer */
+  const fo = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+  },{threshold:.09});
+  document.querySelectorAll('.fu').forEach(el=>fo.observe(el));
+
+  /* Stat counter */
+  const so = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el = e.target;
+      const target = parseInt(el.dataset.count,10);
+      const suffix = el.dataset.suffix||'';
+      const t0 = performance.now(), dur = 1400;
+      (function tick(now){
+        const p = Math.min((now-t0)/dur,1);
+        const v = Math.round((1-Math.pow(1-p,3))*target);
+        el.textContent = (target>=1000?v.toLocaleString():v)+suffix;
+        if(p<1) requestAnimationFrame(tick);
+      })(t0);
+      so.unobserve(el);
+    });
+  },{threshold:.5});
+  document.querySelectorAll('.stat-n[data-count]').forEach(el=>so.observe(el));
+
+  /* Form */
+  function clrErr(f){
+    f.querySelectorAll('.f-err').forEach(e=>e.remove());
+    f.querySelectorAll('.err').forEach(e=>e.classList.remove('err'));
+  }
+  function addErr(inp,msg){
+    const fg=inp.closest('.fg');
+    const s=document.createElement('span');
+    s.className='f-err'; s.textContent=msg;
+    fg.classList.add('err');
+    inp.setAttribute('aria-invalid','true');
+    fg.appendChild(s);
+  }
+  document.getElementById('leadForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    clrErr(this);
+    const fn=this.querySelector('#fn'),ln=this.querySelector('#ln'),em=this.querySelector('#em');
+    let ok=true;
+    if(!fn.value.trim()){ addErr(fn,'First name is required.');  ok=false; }
+    if(!ln.value.trim()){ addErr(ln,'Last name is required.');   ok=false; }
+    if(!em.value.trim()||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim())){
+      addErr(em,'Please enter a valid email.'); ok=false;
+    }
+    if(!ok){ this.querySelector('.err input,.err select').focus(); return; }
+    const name=fn.value.trim(), email=em.value.trim();
+    const btn=this.querySelector('.form-submit');
+    btn.disabled=true; btn.textContent='Sending…';
+    const payload={
+      firstName:fn.value.trim(), lastName:ln.value.trim(),
+      email:em.value.trim(),
+      phone:this.querySelector('#ph').value.trim(),
+      community:this.querySelector('#cm').value,
+      timeline:this.querySelector('#tl').value
+    };
+    fetch('/api/contact',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    })
+    .then(r=>r.json())
+    .then(data=>{
+      if(data.success){
+        document.getElementById('formCard').innerHTML=`
+          <div class="form-card">
+            <div class="form-success" role="alert">
+              <div class="check-ring">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+              <h3>Thank You, ${name}!</h3>
+              <p>Your brochure is on its way to <strong style="color:var(--blue);">${email}</strong>.<br>A Valencia specialist will be in touch shortly.</p>
+            </div>
+          </div>`;
+      } else {
+        btn.disabled=false; btn.textContent='Download Brochure';
+        alert(data.error||'Something went wrong. Please try again.');
+      }
+    })
+    .catch(()=>{
+      btn.disabled=false; btn.textContent='Download Brochure';
+      alert('Network error. Please check your connection and try again.');
+    });
+  });
+
+  /* Reset form on back-navigation (bfcache) so no stale values */
+  window.addEventListener('pageshow', function(e){
+    if(e.persisted){
+      const f=document.getElementById('leadForm');
+      if(f) f.reset();
+    }
+  });
+})();
+</script>
+</body>
+</html>

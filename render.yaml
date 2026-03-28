@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: valencia-landing
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: DATA_DIR
+        value: /data
+      - key: ADMIN_KEY
+        generateValue: true
+    disk:
+      name: leads-data
+      mountPath: /data
+      sizeGB: 1

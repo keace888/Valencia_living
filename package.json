@@ -1,0 +1,16 @@
+{
+  "name": "valencia-landing",
+  "version": "1.0.0",
+  "description": "Valencia by GL Homes — 55+ communities landing page",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
